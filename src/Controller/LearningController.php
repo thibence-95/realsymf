@@ -41,4 +41,8 @@ class LearningController extends AbstractController
             'ischangeName' => 'dit kan ook een about me pagina zen',
         ]);
     }
+    public function showMeTheName()
+    {
+        return $this->render('templates/learning/index.html.twig');
+    }
 }

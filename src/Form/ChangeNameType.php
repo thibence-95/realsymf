@@ -2,7 +2,7 @@
 
 namespace App\Form;
 
-use App\Entity\User;
+use App\Entity\Checker;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -19,18 +19,8 @@ class ChangeNameType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => User::class,
+            'data_class' => Checker::class,
         ]);
     }
-    public function new(Request $request)
-    {
-        $task = new Task();
-        // ...
 
-        $form = $this->createForm(TaskType::class, $task);
-
-        return $this->render('task/new.html.twig', [
-            'form' => $form->createView(),
-        ]);
-    }
 }
