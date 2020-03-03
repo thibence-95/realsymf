@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="abced139-e226-4aca-93d9-3c9dbd4917ba" name="realsymf.local" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/etc/apache2/sites-available" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
